@@ -15,3 +15,33 @@ nav {
     width: 80%;
     margin: auto;
 }
+
+#main-container{
+    margin-left: 450px;
+    margin-top: 150px;
+    margin-right: 50px;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+#main-container h1{
+    font-size: 7rem;
+}
+
+.btn-menu {
+    margin-top: 50px;
+}
+
+.btn-menu button{
+    background-color: transparent;
+    padding: 12px 32px;
+    color: white;
+    border: 1px solid white;
+    display: flex;
+    cursor: pointer;
+}
+
+.btn-menu button span{
+    padding-left: 15px;
+}
