@@ -6,7 +6,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    box-sizing: content-box;
 }
 
 nav {
@@ -16,17 +15,8 @@ nav {
     margin: auto;
 }
 
-#main-container{
-    margin-left: 450px;
-    margin-top: 150px;
-    margin-right: 50px;
-    font-family: "Protest Riot", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: white;
-}
-#main-container h1{
-    font-size: 7rem;
+#main-container .jumbotron h1{
+    font-size: 6rem;
 }
 
 .btn-menu {
@@ -51,6 +41,7 @@ nav ul li a:after,
 nav ul li a:before {
   transition: all .5s;
 }
+
 nav ul li a:hover {
   color: #555;
 }
@@ -58,6 +49,7 @@ nav ul li a:hover {
 nav.stroke ul li a{
   position: relative;
 }
+
 nav.stroke ul li a:after{
   position: absolute;
   bottom: 0;
@@ -70,32 +62,101 @@ nav.stroke ul li a:after{
   background: #aaa;
   height: 1px;
 }
+
 nav.stroke ul li a:hover:after {
   width: 100%;
+}
+
+.jumbotron {
+    margin-left: 32vw;
+    margin-top: 13vw;
+    margin-right: 3vw;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+.container p{
+    font-family: var(--bs-font-sans-serif);
+}
+
+#second-container {
+    margin-top: 170px;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+}
+#second-container h1{
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    text-align: center;
+    font-family: "Protest Riot", sans-serif;
+    font-size: 5rem;
+}
+
+.card {
+    position: absolute;
+    width: 14rem;
+    top: 200px;
+    text-align: center;
+}
+.card img {
+    width: 100%;
+    height: 22vw;
+    object-fit: cover;
+
+}
+.card-container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
 }
 
 @media (min-width:321px) and (max-width:400px) {
     nav {
         width: 100%;
     }
+    .lead {
+        width: 90%;
+        margin: auto;
+        font-size: 2rem;
+    }
 
-    #main-container {
+    #main-container .jumbotron{
         margin: 0;
         width: 100%;
         text-align: center;
         margin-top: 60px;
     }
-    #main-container h1{
+    #main-container .jumbotron h1{
         font-size: 3.5rem;
         width: 80%;
         margin: auto;
+        margin-bottom: 25px;
         text-align: center;
+    }
+    #second-container h1 {
+        font-size: 3.5rem;
     }
     .btn-menu{
         display: flex;
         justify-content: center;
+        margin: 0;
         align-items: center;
-        margin-top: 20px;
         margin-bottom: 50px;
+    }
+    #second-container {
+        margin-top: 100px;
+        height: 210vh;
+    }
+    .card {
+        width: 7rem;
+        margin: auto;
+    }
+    .card-container{
+        flex-direction: column;
     }
 }
