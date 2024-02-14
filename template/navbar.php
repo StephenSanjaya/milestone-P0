@@ -13,7 +13,7 @@
             <a class="nav-link text-light fs-5" href="#">Product</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link text-light fs-5" href="#">Gallery</a>
+            <a class="nav-link text-light fs-5" href="./gallery.php">Gallery</a>
             </li>
             <li class="nav-item">
             <a class="nav-link text-light fs-5" href="./about_us.php">About Us</a>

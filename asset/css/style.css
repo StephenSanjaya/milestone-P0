@@ -15,7 +15,7 @@ nav {
     margin: auto;
 }
 #main-container{
-    margin-bottom: 170px;
+    margin-bottom: 130px;
 }
 #main-container .jumbotron h1{
     font-size: 6rem;
@@ -126,6 +126,20 @@ footer {
 footer h1 {
     text-align: center;
     font-size: 1.2rem;
+}
+#carouselExampleIndicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 70vh;
+    margin-bottom: 65px;
+}
+
+.carousel-item img{
+    width: 50%;
+    height: auto;
+    margin: auto;
 }
 
 @media (min-width:321px) and (max-width:400px) {
