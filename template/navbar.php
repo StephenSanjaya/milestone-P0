@@ -10,7 +10,7 @@
             <a class="nav-link active text-light fs-5" aria-current="page" href="./home.php">Home</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link text-light fs-5" href="#">Product</a>
+            <a class="nav-link text-light fs-5" href="./menu.php">Menu</a>
             </li>
             <li class="nav-item">
             <a class="nav-link text-light fs-5" href="./gallery.php">Gallery</a>

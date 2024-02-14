@@ -142,6 +142,27 @@ footer h1 {
     margin: auto;
 }
 
+#menu-section {
+    margin-left: 32vw;
+    margin-top: 5vw;
+    margin-right: 3vw;
+}
+
+.menu-selection {
+    width: 20%;
+}
+.menu-image {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.menu-image h1{
+    margin-left: 50px;
+    color: white;
+    font-family: "Protest Riot", sans-serif;
+    text-align: center;
+}
+
 @media (min-width:321px) and (max-width:400px) {
     nav {
         width: 100%;

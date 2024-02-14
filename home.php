@@ -11,7 +11,7 @@
             <div class="container">
                 <h1 class="display-4">Enjoy Our Food</h1>
                 <div class="btn-menu">
-                    <button class="btn btn-outline-dark">Explore Our Menu <span class="material-symbols-outlined">chevron_right</span></button>
+                    <button onclick="window.location.href='./menu.php'" class="btn btn-outline-dark">Explore Our Menu <span class="material-symbols-outlined">chevron_right</span></button>
                 </div>
             </div>
         </div>
