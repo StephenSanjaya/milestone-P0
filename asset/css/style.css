@@ -229,7 +229,7 @@ form .form-control{
     color: white;
 }
 
-form .form-control:focus, form .form-control:active, form .form-control:hover {
+form .form-control:focus, form .form-control:active {
     background: transparent;
     color: white;
 }

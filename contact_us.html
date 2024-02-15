@@ -51,33 +51,29 @@
         </div>
         <form method="" action="">
             <div class="mb-3">
-                <label for="exampleInputName" class="form-label">Name*</label>
+                <label for="exampleInputName" class="form-label">Name</label>
                 <div class="inpName-div">
-                    <input type="text" class="form-control" id="exampleInputFn" placeholder="First name">
-                    <input type="text" class="form-control" id="exampleInputLn" placeholder="Last name">
+                    <input type="text" class="form-control" id="exampleInputFn" placeholder="First name" required>
+                    <input type="text" class="form-control" id="exampleInputLn" placeholder="Last name" required>
                 </div>
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1">
+                <input type="email" class="form-control" id="exampleInputEmail1" required>
             </div>
             <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password*</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputPhone" class="form-label">Phone*</label>
-                <input type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" class="form-control" id="exampleInputPhone">
+                <label for="exampleInputPhone" class="form-label">Phone</label>
+                <input type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="### ### ####" class="form-control" id="exampleInputPhone" required>
             </div>
             <fieldset disabled>
                 <div class="mb-3">
-                    <label for="exampleInputSubject" class="form-label">Message subject*</label>
+                    <label for="exampleInputSubject" class="form-label">Message subject</label>
                     <input type="text" class="form-control" id="exampleInputSubject" placeholder="Request">
                 </div>
             </fieldset>
             <div class="mb-3">
-                <label for="exampleInputMessage" class="form-label">Example textarea</label>
-                <textarea class="form-control" id="exampleInputMessage" rows="3"></textarea>
+                <label for="exampleInputMessage" class="form-label">Message</label>
+                <textarea class="form-control" id="exampleInputMessage" rows="3" required></textarea>
             </div>
             <button id="btn-submit-contact" type="submit" class="btn btn-primary d-block">Send Message</button>
         </form>
