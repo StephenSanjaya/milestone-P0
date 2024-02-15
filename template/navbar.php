@@ -19,7 +19,7 @@
             <a class="nav-link text-light fs-5" href="./about_us.php">About Us</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link text-light fs-5" href="#">Contact Us</a>
+            <a class="nav-link text-light fs-5" href="./contact_us.php">Contact Us</a>
             </li>
             <li class="nav-item">
             <a class="nav-link text-light fs-5" href="#">Login/Register</a>

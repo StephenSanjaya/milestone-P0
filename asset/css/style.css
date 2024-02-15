@@ -178,6 +178,25 @@ footer h1 {
     width: 50%;
 }
 
+#contact-section {
+    width: 40%;
+    margin: auto;
+}
+
+.form-label, .contact-title h1{
+    color: white;
+}
+
+.inpName-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#btn-submit-contact {
+    width: 100%;
+}
+
 @media (min-width:321px) and (max-width:400px) {
     nav {
         width: 100%;
