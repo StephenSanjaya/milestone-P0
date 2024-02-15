@@ -1,3 +1,6 @@
+<?php
+    include "./database/show-data.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,32 +50,24 @@
 
     <section id="form-section">
         <div class="form-title">
-            <h1>Register</h1>
+            <h1>Login</h1>
         </div>
-        <form method="" action="">
-            <div class="mb-3">
-                <label for="exampleInputUsername" class="form-label">Name</label>
-                <input type="text" class="form-control" id="exampleInputUsername" required>
-            </div>
+        <form method="POST" action="./database/login-validation.php">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" required>
+                <input type="email" class="form-control" id="exampleInputEmail1" name="email" value="<?php echo $email; ?>" required>
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" required>
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputConfPass" class="form-label">Confirm Password</label>
-                <input type="password" class="form-control" id="exampleInputConfPass" required>
+                <input type="password" class="form-control" id="exampleInputPassword1" name="password" value="<?php echo $password; ?>" required>
             </div>
             <div class="mb-3 form-check">
-                <input type="checkbox" required class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">I accept all terms & condition</label>
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Remember me</label>
             </div>
-            <button id="btn-register" type="submit" class="btn btn-primary d-block">Reigster</button>
+            <button onclick="" id="btn-login" name="submit" type="submit" class="btn btn-primary d-block">Login</button>
             <div class="sign-up-link">
-                <p>Already have an account? <a href="./login.html">Login now</a></p>
+                <p>Don't have an account? <a href="./register.html">Signup now</a></p>
             </div>
         </form>
     </section>

@@ -47,33 +47,35 @@
 
     <section id="form-section">
         <div class="form-title">
-            <h1>Register</h1>
+            <h1>Contact Us</h1>
         </div>
-        <form method="" action="">
+        <form method="post" action="./database/insert-contacts-db.php">
             <div class="mb-3">
-                <label for="exampleInputUsername" class="form-label">Name</label>
-                <input type="text" class="form-control" id="exampleInputUsername" required>
+                <label for="exampleInputName" class="form-label">Name</label>
+                <div class="inpName-div">
+                    <input type="text" class="form-control" id="exampleInputFn" placeholder="First name" name="first-name" required>
+                    <input type="text" class="form-control" id="exampleInputLn" placeholder="Last name" name="last-name" required>
+                </div>
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" required>
+                <input type="email" class="form-control" id="exampleInputEmail1" name="email" required>
             </div>
             <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" required>
+                <label for="exampleInputPhone" class="form-label">Phone</label>
+                <input type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="### ### ####" class="form-control" id="exampleInputPhone" name="phone" required>
             </div>
+            <fieldset disabled>
+                <div class="mb-3">
+                    <label for="exampleInputSubject" class="form-label">Message subject</label>
+                    <input type="text" class="form-control" id="exampleInputSubject" placeholder="Request">
+                </div>
+            </fieldset>
             <div class="mb-3">
-                <label for="exampleInputConfPass" class="form-label">Confirm Password</label>
-                <input type="password" class="form-control" id="exampleInputConfPass" required>
+                <label for="exampleInputMessage" class="form-label">Message</label>
+                <textarea class="form-control" id="exampleInputMessage" rows="3" name="message" required></textarea>
             </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" required class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">I accept all terms & condition</label>
-            </div>
-            <button id="btn-register" type="submit" class="btn btn-primary d-block">Reigster</button>
-            <div class="sign-up-link">
-                <p>Already have an account? <a href="./login.html">Login now</a></p>
-            </div>
+            <button onclick="" id="btn-submit-contact" name="submit" type="submit" class="btn btn-primary d-block">Send Message</button>
         </form>
     </section>
 
