@@ -178,13 +178,19 @@ footer h1 {
     width: 50%;
 }
 
-#contact-section {
+#form-section {
     width: 40%;
     margin: auto;
+    backdrop-filter: blur(5px);
+    margin-top: 50px;
 }
 
-.form-label, .contact-title h1{
+.form-label, .form-title h1{
     color: white;
+}
+
+.form-title h1 {
+    text-align: center;
 }
 
 .inpName-div {
@@ -193,8 +199,39 @@ footer h1 {
     justify-content: space-around;
 }
 
-#btn-submit-contact {
+#btn-submit-contact, #btn-login, #btn-register {
     width: 100%;
+}
+
+.form-check {
+    margin-top: 40px;
+}
+
+.sign-up-link {
+    margin-top: 30px;
+    margin-bottom: 90px;
+    text-align: center;
+}
+
+.sign-up-link p, .form-check-label{
+    color: white;
+}
+
+.sign-up-link p a{
+    text-decoration: none;
+}
+
+form .form-control{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    box-sizing: border-box;
+    color: white;
+}
+
+form .form-control:focus, form .form-control:active, form .form-control:hover {
+    background: transparent;
+    color: white;
 }
 
 @media (min-width:321px) and (max-width:400px) {

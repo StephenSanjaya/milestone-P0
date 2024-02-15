@@ -6,8 +6,8 @@
 <body>
     <?php include './template/navbar.php' ?>
 
-    <section id="contact-section">
-        <div class="contact-title">
+    <section id="form-section">
+        <div class="form-title">
             <h1>Contact Us</h1>
         </div>
         <form method="" action="">
@@ -28,7 +28,7 @@
             </div>
             <div class="mb-3">
                 <label for="exampleInputPhone" class="form-label">Phone*</label>
-                <input type="text" class="form-control" id="exampleInputPhone">
+                <input type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" class="form-control" id="exampleInputPhone">
             </div>
             <fieldset disabled>
                 <div class="mb-3">
