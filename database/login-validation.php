@@ -1,9 +1,11 @@
 <?php
 
-   error_reporting(E_ALL);
-   ini_set('display_errors',1);
+    session_start();
 
-   include "connection.php";
+    error_reporting(E_ALL);
+    ini_set('display_errors',1);
+
+    include "connection.php";
 
     if(isset($_POST['submit'])){
         $email = $_POST["email"];
@@ -14,7 +16,7 @@
     $sql->bind_param("ss", $email, $password);
 
     $sql->execute();
-    // $result = $sql->get_result();
+    $result = $sql->get_result();
 
     if($result->num_rows > 0){
         header("Location: http://localhost/milestone-P0/home.html");
