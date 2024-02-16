@@ -10,14 +10,41 @@
         $password = $_POST["password"];
     }
 
-    $sql = "SELECT * FROM users WHERE email = '$email' AND password = '$password'";
-    $result = $conn->query($sql);
+    $sql = $conn->prepare("SELECT * FROM users WHERE email = ? AND password = ?");
+    $sql->bind_param("ss", $email, $password);
 
-    if ($result->num_rows > 0){
+    $sql->execute();
+    // $result = $sql->get_result();
+
+    if($result->num_rows > 0){
         header("Location: http://localhost/milestone-P0/home.html");
-    } else{
-        echo "0 results";
+        session_destroy();
+    } else {
+        ?>
+            <script type="text/javascript">
+                alert("user not exists");
+                window.location.href = "http://localhost/milestone-P0/login.php";
+            </script>
+        <?php
     }
-    $conn->close();
+
+    $conn->commit();
+
+    // $sql = "SELECT * FROM users WHERE email = '$email' AND password = '$password'";
+    // $result = $conn->query($sql);
+
+    // if ($result->num_rows > 0){
+    //     header("Location: http://localhost/milestone-P0/home.html");
+    //     session_destroy();
+    // } else{
+    //     ?>
+    //         <script type="text/javascript">
+    //         alert("user not exists");
+    //         window.location.href = "http://localhost/milestone-P0/login.php";
+    //         </script>
+    //     <?php
+    // }
+    // $conn->close();
 
 ?>
+

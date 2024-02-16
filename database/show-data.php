@@ -10,22 +10,26 @@
     if ( $conn->connect_error){
         die("Connection failed:".$conn->connect_error);
     }
+    
+    if ( !isset($_SESSION) || !isset($_SESSION['myemail']) ) {
+        $email = "";
+        $password = "";
+    }else{
+        $s_email = $_SESSION['myemail'];
 
-    $s_email = $_SESSION['myemail'];
-    echo "'<script>console.log(\"$s_email\")</script>'";
+        $sql = "SELECT * FROM users WHERE email = '$s_email'";
+        $result = $conn->query($sql);
 
-    // $sql = "SELECT * FROM users WHERE id = 1";
-    $sql = "SELECT * FROM users WHERE email = '$s_email'";
-    $result = $conn->query($sql);
-
-    if ($result->num_rows > 0){
-        while($row = $result->fetch_assoc()){
-            $email = $row["email"];
-            $password = $row["password"];
+        if ($result->num_rows > 0){
+            while($row = $result->fetch_assoc()){
+                $email = $row["email"];
+                $password = $row["password"];
+            }
+        } else{
+            echo "0 results";
         }
-    } else{
-        echo "0 results";
     }
+
     $conn->close();
 
 ?>

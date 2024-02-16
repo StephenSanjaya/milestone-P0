@@ -16,9 +16,9 @@
 
     $sql = "INSERT INTO users(name, email, password) VALUES ('$name', '$email', '$password')";
 
-    $_SESSION['myemail'] = $email;
-
+    
     if($conn->query($sql) == TRUE){
+        $_SESSION['myemail'] = $email;
         echo "data berhasil ditambahkan";
         header("Location: http://localhost/milestone-P0/login.php");
         exit();
