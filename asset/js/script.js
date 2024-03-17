@@ -10,7 +10,7 @@ function initMenu() {
     document.getElementById("menu-name").innerHTML = name;
     document.getElementById("tbl-menu-name").innerHTML = name;
 
-    document.getElementById("tbl-menu-price").innerHTML = totalPrice;
+    document.getElementById("tbl-menu-price").innerHTML = "Rp. " + totalPrice.toString();
     document.getElementById("tbl-menu-person").innerHTML = person;
 }
 
@@ -45,6 +45,6 @@ function renderPerson() {
     var person = selected.value;
     var totalPrice = person * price;
 
-    document.getElementById("tbl-menu-price").innerHTML = totalPrice;
+    document.getElementById("tbl-menu-price").innerHTML = "Rp. " + totalPrice.toString();
     document.getElementById("tbl-menu-person").innerHTML = person;
 }
